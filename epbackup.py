@@ -91,7 +91,7 @@ def _backup_db(config):
     cmd.append('-h')
     cmd.append(url.hostname)
     if url.username:
-        cmd.append('-u')
+        cmd.append('-U')
         cmd.append(url.username)
     if url.password:
         env['PGPASSWORD'] = url.password
